@@ -136,7 +136,7 @@ def prompt_gpt(audio):
 
         prompt_text = wav_to_text(prompt_audio_path)
         if len(prompt_text.strip()) == 0:
-            print("I couldn't hear you. Please come again.")
+            print("I couldn't hear you. Speak up again.")
             listening_for_wake_word = True
         else:
             print('User: ' + prompt_text)
